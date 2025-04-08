@@ -1,0 +1,268 @@
+/* index.css */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+header {
+  background: linear-gradient(135deg, #004494, #092441);
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  position: relative;
+}
+
+h1.github-style {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.logo {
+  width: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  position: absolute;
+  /* Position the logo independently */
+  top: 20px;
+  /* Adjusts vertical position */
+  left: 20px;
+  /* Keeps the logo aligned to the left */
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 40%;
+}
+
+nav {
+  background: linear-gradient(135deg, #004494, #092441);
+  padding: 5px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #004494;
+  border-radius: 5px;
+}
+
+main {
+  padding-top: 1px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #004494, #092441);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  width: 250px;
+  /* Keep the original dimensions */
+  padding: 10px;
+  background-color: black;
+  color: white;
+  /* Ensure the text is white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  /* Increased opacity for darker background */
+  z-index: 1;
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card h3,
+.card p,
+.card button {
+  position: relative;
+  z-index: 2;
+}
+
+.explore-button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #004494, #092441);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+.explore-button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.explore-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #004494;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  width: 100%;
+  /* Ensure the body spans full width */
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Ensure the footer spans full width */
+  max-width: 100vw;
+  /* Prevent overflow caused by unintended width */
+}
+
+@media (max-width: 768px) {
+
+  /* Logo Adjustment */
+  .logo {
+    position: static;
+    /* Removes absolute positioning */
+    margin: 0 auto;
+    /* Centers the logo */
+    display: block;
+    /* Ensures it takes its own line */
+    width: 200px;
+  }
+
+  /* Header Text Alignment */
+  header {
+    text-align: center;
+    /* Centers all text in the header */
+  }
+
+  h1,
+  p,
+  .search-input {
+    text-align: center;
+    /* Centers text and search box */
+  }
+
+  .search-input {
+    width: 90%;
+    /* Adjust search box width for smaller screens */
+  }
+
+  /* Navbar Font Size and Layout for Small Screens */
+  .nav-links {
+    /*flex-wrap: wrap;*/
+    /* Allows wrapping if necessary */
+    gap: 10px;
+    /* Adjusts spacing between links */
+    justify-content: center;
+    /* Ensures links are centered */
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    /* Smaller font size for small screens */
+    padding: 5px 5px;
+    /* Adjust padding for better fit */
+  }
+}

@@ -1,0 +1,148 @@
+/* contact.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  line-height: 1.6;
+  background: linear-gradient(135deg, #004494, #092441);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(135deg, #004494, #092441);
+  padding: 5px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #004494;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.contact-info {
+  width: 50%;
+  margin-right: 2%;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: silver;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.address {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  width: 48%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+}
+
+footer {
+  background-color: linear-gradient(135deg, #004494, #092441);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Reduce Layout Gaps */
+.contact-section {
+  padding: 1.5rem 2rem;
+}
+
+.contact-info,
+.contact-form {
+  width: 48%;
+}
+
+.container {
+  padding: 1rem 2rem;
+}
